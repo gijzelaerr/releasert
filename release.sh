@@ -1,16 +1,21 @@
-#!bash -ve
+#!bash -e
 #
 # this script will build a debian package from a github repo.
 # it is assumed that:
 #
-# * git and hub are installed
+# * You want to make a new release
 #
-# * the git repo has a submodule called
-#   debian, which contains debian package files. 
+# * You want the changes commited to the github repository
+#    (new tag and updated deb package changelog)
 #
 # * you can access and commit to the git repo
 #
 # * you have access to dput to launchpad
+#
+#
+# WARNING: will push stuff to launchad and github
+#
+
 
 ORGANISATION=ska-sa
 WORKDIR=~/packaging
